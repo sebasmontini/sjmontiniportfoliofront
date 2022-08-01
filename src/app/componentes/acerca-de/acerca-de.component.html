@@ -1,7 +1,8 @@
 <div class="container-fluid">
     <div class="row" id="main-div">
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <img src="https://i.ibb.co/VjDhd4d/foto-Perfil.jpg" alt="Foto Sebastían Javier Montini" class="img-fluid" id="aboutBack">
+            <img src="https://i.ibb.co/VjDhd4d/foto-Perfil.jpg" alt="Foto Sebastían Javier Montini" class="img-fluid"
+                id="aboutBack">
         </div>
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
             <p>Montini Sebastián</p>
@@ -15,46 +16,10 @@
                     veritatis?</p>
             </span>
         </div>
-        <div class="container" *ngFor="let per of personas">
-            <div class="column">
-                <img src={{per.urlImagen}} alt="foto de carolina pettinaroli" id="foto_cv"> 
-                <!-- <div id="eliminar-editar-sobremi" *ngIf="isAdmin">
-                    <button (click)="onOpenModal(null!,'add')" type="button" class="botones_contenido">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button (click)="onOpenModal(per,'edit')" type="button" class="botones_contenido">
-                        <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button (click)="onOpenModal(per,'delete')"  type="button" class="botones_contenido">
-                        <i class="fa-solid fa-eraser"></i>  
-                    </button>
-                </div> -->
-                <h1> {{per.nombre}}<span id="strong">{{per.apellido}} </span> </h1>
-                <h2> {{per.ocupacion}} </h2>
-                
-            </div>
-            <div class="column2">
-                <div class="sobremi">
-                    <div class="sobremi2" *ngFor="let per of personas">
-                        <span class="sobremiparrafo"> {{per.sobremi}}</span>
-                        <!-- <div class="edit-parrafo" id="eliminar-editar-sobremi" *ngIf="isAdmin">
-                            <button (click)="onOpenModal(null!,'add')" type="button" class="botones_contenido">
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                            <button (click)="onOpenModal(per,'edit')" type="button" class="botones_contenido">
-                                <i class="fa-solid fa-pen"></i>
-                            </button>
-                            <button (click)="onOpenModal(per,'delete')"  type="button" class="botones_contenido">
-                                <i class="fa-solid fa-eraser"></i>
-                            </button>
-                        </div> -->
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="column3" *ngFor="let per of personas">
-                <a href="https://wa.me/{{per.telefono}}" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>        
-            </div>
-        </div>
+
+        <!-- <div class="column3" *ngFor="let per of personas">
+            <a href="https://wa.me/{{per.telefono}}" class="whatsapp" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div> -->
     </div>
 </div>
